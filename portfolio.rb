@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'sinatra'
+require 'haml'
 
 get '/' do
-  'hello world'
+  haml '%h1 hello world'
 end
