@@ -2,6 +2,10 @@ require 'rubygems'
 require 'sinatra'
 require 'haml'
 
+configure do
+  set :haml, format: :html5
+end
+
 get '/' do
-  haml '%h1 hello world'
+  haml :index
 end
