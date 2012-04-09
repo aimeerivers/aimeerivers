@@ -12,6 +12,9 @@ body {
 
   p, blockquote {
     font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 15px;
   }
 
   h2 {
@@ -22,10 +25,12 @@ body {
   .name-and-title {
     width: auto;
     display: table;
+    margin-top: 22px;
 
     h1 {
       color: #f54ec4;
       font-size: 60px;
+      line-height: 50px;
       font-weight: normal;
       display: table-row;
 
@@ -42,6 +47,7 @@ body {
 
       .title {
         font-size: 24px;
+        line-height: 24px;
         text-align: right;
         display: table-cell;
       }
