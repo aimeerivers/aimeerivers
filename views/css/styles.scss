@@ -3,7 +3,33 @@
 /* ============================== */
 
 body {
+  background-color: #f8f8f8;
 
+  .name-and-title {
+    width: auto;
+    display: table;
+
+    h1 {
+      color: #f557c7;
+      font-size: 3em;
+      display: table-row;
+
+      .name {
+        display: table-cell;
+      }
+    }
+
+    h2 {
+      display: table-row;
+      font-weight: normal;
+      color: #f69edc;
+
+      .title {
+        text-align: right;
+        display: table-cell;
+      }
+    }
+  }
 }
 
 
