@@ -2,16 +2,31 @@
 /* ! Layout for desktop version   */
 /* ============================== */
 
+@import url(http://fonts.googleapis.com/css?family=Lustria|Lato);
+
 body {
   background-color: #f8f8f8;
+  color: #747474;
+
+  font-family: 'Lustria', serif;
+
+  p, blockquote {
+    font-family: 'Lato', sans-serif;
+  }
+
+  h2 {
+    font-size: 42px;
+    color: #464646;
+  }
 
   .name-and-title {
     width: auto;
     display: table;
 
     h1 {
-      color: #f557c7;
-      font-size: 3em;
+      color: #f54ec4;
+      font-size: 60px;
+      font-weight: normal;
       display: table-row;
 
       .name {
@@ -22,9 +37,11 @@ body {
     h2 {
       display: table-row;
       font-weight: normal;
-      color: #f69edc;
+      color: #f54ec4;
+      opacity: 0.55;
 
       .title {
+        font-size: 24px;
         text-align: right;
         display: table-cell;
       }
