@@ -8,61 +8,47 @@
     %link(href="css/styles.css" media="screen" rel="stylesheet" type="text/css")
 
   %body
-    .container
+    .header.vcard
+      .name-and-title
+        .fn.n
+          .name
+            %span.given-name aimee
+            %span.family-name daniells
+        .job-title
+          .title software crafter
+      .contact-icons
+        %p contact icons
 
-      .header.vcard
-        .row
-          .eightcol
-            .name-and-title
-              .fn.n
-                .name
-                  %span.given-name aimee
-                  %span.family-name daniells
-              .job-title
-                .title software crafter
-          .fourcol.last
-            .contact-icons
-              %p contact icons
+      .contact-details
+        .email aimee@aimeedaniells.com
+        .tel 074 032 68 398
 
-        .row.contact-details
-          .sixcol.email aimee@aimeedaniells.com
-          .sixcol.last.tel 074 032 68 398
+    %nav
+      %ul
+        %li freelance
+        %li pet projects
 
-      %nav
-        .row
-          .twelvecol
-            %ul
-              %li freelance
-              %li pet projects
+    .portfolio
+      .example
+        .screenshot
+          %p screenshot
+        .details
+          %h1 boxedup
+          %p A rewrite of BoxedUp had been ongoing for over a year. I worked with them to finally get it launched. Huge data migrations, Rails, MongoDB and Resque.
+        .link
+          view
 
-      .portfolio
-        .example
-          .row
-            .eightcol
-              .screenshot
-                %p screenshot
-            .fourcol.last
-              .details
-                %h1 boxedup
-                %p A rewrite of BoxedUp had been ongoing for over a year. I worked with them to finally get it launched. Huge data migrations, Rails, MongoDB and Resque.
-              .link
-                view
+      .switcher
+        switcher
 
-        .switcher
-          .row
-            .twelvecol
-              switcher
+    .row
+      .about-me
+        %h1 who am i?
+        %p I am an independent software crafter, living in Winchster, UK. I am fascinated by the web, mashups, geolocation and mobile technologies.
+        %p I specialise in data modelling and integration of existing systems via APIs. I have strong skills in object oriented programming, particularly Ruby.
+        %p My interests are in TDD, BDD, agile software development, strong client interaction, software craftsmanship, mentoring, open source software, and great user experience at all levels.
 
-      .row
-        .sixcol
-          .about-me
-            %h1 who am i?
-            %p I am an independent software crafter, living in Winchster, UK. I am fascinated by the web, mashups, geolocation and mobile technologies.
-            %p I specialise in data modelling and integration of existing systems via APIs. I have strong skills in object oriented programming, particularly Ruby.
-            %p My interests are in TDD, BDD, agile software development, strong client interaction, software craftsmanship, mentoring, open source software, and great user experience at all levels.
-
-        .sixcol.last
-          .testimonials
-            %h1 testimonials
-            %blockquote Aimee has been an absolute delight to work with on the first phase of the Feusd Core project. She has an intimate knowledge of Ruby and is very enthusiastic about pair programming, automated testing, and retrospectives. She has a passion for producing elegant and extensible code, and is a very patient and thoughtful mentor.
-            .attribution Tom Inglis, October 2011
+      .testimonials
+        %h1 testimonials
+        %blockquote Aimee has been an absolute delight to work with on the first phase of the Feusd Core project. She has an intimate knowledge of Ruby and is very enthusiastic about pair programming, automated testing, and retrospectives. She has a passion for producing elegant and extensible code, and is a very patient and thoughtful mentor.
+        .attribution Tom Inglis, October 2011
