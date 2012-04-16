@@ -226,4 +226,32 @@ Zoomed in above 912 px
  */
 
 @media screen and (min-width: 57em) {
+
+  .header, nav, .portfolio, .row {
+    width: $cols16;
+    margin: 0 auto;
+  }
+
+  .name-and-title {
+    width: $cols8;
+    float: left;
+  }
+
+  .contact-icons {
+    margin-left: $gutter;
+    padding-left: $cols8;
+    padding-top: $font-size / $em;
+    width: $cols8;
+    text-align: right;
+  }
+
+  .contact-details {
+    clear: left;
+
+    .email {
+      width: $cols8;
+      float: left;
+    }
+  }
+
 }
