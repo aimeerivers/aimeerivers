@@ -199,6 +199,19 @@ Zoomed out below 320 px
  */
 
 @media screen and (min-width: 15em) {
+
+  .header, nav, .portfolio, .row {
+    width: $cols8;
+    margin: 0 auto;
+  }
+
+  .name-and-title {
+    .fn.n {
+      font-size: 64px;
+      line-height: 54px;
+    }
+  }
+
 }
 
 /*
@@ -235,6 +248,11 @@ Zoomed in above 912 px
   .name-and-title {
     width: $cols8;
     float: left;
+
+    .fn.n {
+      font-size: 60px;
+      line-height: 50px;
+    }
   }
 
   .contact-icons {
