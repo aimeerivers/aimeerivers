@@ -254,7 +254,7 @@ Zoomed in above 600 px
 @media screen and (min-width: 37.5em) {
 
   .header, nav, .portfolio, .row {
-    width: $cols12;
+    width: $cols10;
   }
 
   .name-and-title {
@@ -276,7 +276,7 @@ Zoomed in above 600 px
     margin-left: $gutter;
     padding-left: $cols6;
     padding-top: $font-size / $em;
-    width: $cols6;
+    width: $cols4;
     text-align: right;
   }
 
