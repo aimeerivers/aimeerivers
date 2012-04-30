@@ -64,6 +64,8 @@ body {
         display: inline-block;
         background-color: #f54ec4;
         background-repeat: no-repeat;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
         border-radius: 50%;
 
         &:hover {
