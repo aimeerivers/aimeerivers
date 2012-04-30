@@ -217,6 +217,27 @@ Zoomed out below 320 px
     }
   }
 
+  ul.contact-icons {
+    padding-top: 20px;
+    text-align: center;
+
+    li {
+      margin-left: 12px;
+
+      a {
+        width: 44px;
+        height: 44px;
+        background-image: url(/images/social-icons-44.png);
+      }
+
+      &.cv a { background-position: 0 0; }
+      &.linked-in a { background-position: 0 -43px; }
+      &.github a { background-position: 0 -87px; }
+      &.twitter a { background-position: 0 -131px; }
+      &.skype a { background-position: 0 -175px; }
+    }
+  }
+
 }
 
 /*
@@ -240,6 +261,14 @@ Zoomed in above 480 px
     .title {
       font-size: 25px;
       line-height: 25px;
+    }
+  }
+
+  ul.contact-icons {
+    padding-top: 26px;
+
+    li {
+      margin-left: 16px;
     }
   }
 
@@ -272,12 +301,28 @@ Zoomed in above 600 px
     }
   }
 
-  .contact-icons {
+  ul.contact-icons {
     margin-left: $gutter;
     padding-left: $cols6;
-    padding-top: $font-size / $em;
+    padding-top: 27px;
     width: $cols4;
     text-align: right;
+
+    li {
+      margin-left: 4px;
+
+      a {
+        width: 32px;
+        height: 32px;
+        background-image: url(/images/social-icons-32.png);
+      }
+
+      &.cv a { background-position: 0 0; }
+      &.linked-in a { background-position: 0 -31px; }
+      &.github a { background-position: 0 -63px; }
+      &.twitter a { background-position: 0 -95px; }
+      &.skype a { background-position: 0 -127px; }
+    }
   }
 
   .contact-details {
@@ -317,9 +362,25 @@ Zoomed in above 912 px
     }
   }
 
-  .contact-icons {
+  ul.contact-icons {
     padding-left: $cols8;
     width: $cols8;
+
+    li {
+      margin-left: 12px;
+
+      a {
+        width: 44px;
+        height: 44px;
+        background-image: url(/images/social-icons-44.png);
+      }
+
+      &.cv a { background-position: 0 0; }
+      &.linked-in a { background-position: 0 -43px; }
+      &.github a { background-position: 0 -87px; }
+      &.twitter a { background-position: 0 -131px; }
+      &.skype a { background-position: 0 -175px; }
+    }
   }
 
   .contact-details {

@@ -52,11 +52,9 @@ body {
 
   ul.contact-icons {
     list-style-type: none;
-    margin-top: 20px;
 
     li {
       display: inline-block;
-      margin-left: 26px;
 
       &:first-child {
         margin-left: 0;
@@ -67,20 +65,11 @@ body {
         background-color: #f54ec4;
         background-repeat: no-repeat;
         border-radius: 50%;
-        width: 62px;
-        height: 62px;
-        background-image: url(/images/social-icons-62.png);
 
         &:hover {
           background-color: #e680d4;
         }
       }
-
-      &.cv a { background-position: 0 0; }
-      &.linked-in a { background-position: 0 -61px; }
-      &.github a { background-position: 0 -123px; }
-      &.twitter a { background-position: 0 -185px; }
-      &.skype a { background-position: 0 -247px; }
     }
 
   }
