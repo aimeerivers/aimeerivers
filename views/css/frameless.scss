@@ -228,6 +228,17 @@ Zoomed out below 320 px
         width: 44px;
         height: 44px;
         background-image: url(/images/social-icons-44.png);
+
+        &:hover {
+          span.triangle {
+            right: 20px;
+            top: 46px;
+          }
+
+          span.tooltip {
+            top: 50px;
+          }
+        }
       }
 
       &.cv a { background-position: 0 0; }
