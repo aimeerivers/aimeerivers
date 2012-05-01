@@ -15,6 +15,7 @@ $em: $font-size / 1em;  // Shorthand for outputting ems
 $column: 40px;  // The column-width of your grid in pixels
 $gutter: 20px;  // The gutter-width of your grid in pixels
 
+$hotpink: #f54ec4;
 
 //
 // Column-widths in variables, in ems
@@ -142,11 +143,11 @@ These are easy to forget
  */
 
 ::selection {
-  background: red;
+  background: $hotpink;
   color: white;
 }
 ::-moz-selection {
-  background: red;
+  background: $hotpink;
   color: white;
 }
 
