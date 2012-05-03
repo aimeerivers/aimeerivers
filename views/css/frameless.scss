@@ -207,6 +207,9 @@ Zoomed out below 320 px
   }
 
   .name-and-title {
+    margin-left: auto;
+    margin-right: auto;
+
     .fn.n {
       font-size: 49px / $em;
       line-height: 0.9em;
