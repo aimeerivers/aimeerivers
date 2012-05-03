@@ -9,3 +9,9 @@
   filter: alpha(opacity=$opacity);
   opacity: $opacity / 100;
 }
+
+@mixin clearfix {
+  &:before, &:after { content: ""; display: table; }
+  &:after { clear: both; }
+  zoom: 1;
+}
