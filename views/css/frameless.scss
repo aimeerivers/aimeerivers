@@ -317,11 +317,13 @@ Zoomed in above 600 px
 
   .header, nav, .portfolio, .row {
     width: $cols10;
+    @include clearfix;
   }
 
   .name-and-title {
     width: $cols6;
     margin-left: 0;
+    margin-bottom: 1em;
     float: left;
 
     .fn.n {
@@ -340,6 +342,7 @@ Zoomed in above 600 px
     width: $cols4;
     text-align: right;
     border: none;
+    position: absolute;
 
     li {
       margin-left: 4px / $em;
