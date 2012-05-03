@@ -4,6 +4,7 @@
 
 @import url(http://fonts.googleapis.com/css?family=Lustria|Lato);
 @import 'css3_mixins.scss';
+@import 'variables.scss';
 
 body {
   background-color: #f8f8f8;
@@ -29,7 +30,7 @@ body {
     margin-top: 22px;
 
     .fn.n {
-      color: #f54ec4;
+      color: $hotpink;
       font-weight: normal;
       display: table-row;
 
@@ -41,7 +42,7 @@ body {
     .job-title {
       display: table-row;
       font-weight: normal;
-      color: #f54ec4;
+      color: $hotpink;
       opacity: 0.55;
 
       .title {
@@ -63,7 +64,7 @@ body {
 
       a {
         display: inline-block;
-        background-color: #f54ec4;
+        background-color: $hotpink;
         background-repeat: no-repeat;
         text-decoration: none;
 
