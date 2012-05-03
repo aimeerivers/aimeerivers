@@ -3,3 +3,9 @@
   -moz-border-radius: $radius;
   border-radius: $radius;
 }
+
+@mixin opacity($opacity) {
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$opacity})";
+  filter: alpha(opacity=$opacity);
+  opacity: $opacity / 100;
+}

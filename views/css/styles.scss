@@ -43,7 +43,7 @@ body {
       display: table-row;
       font-weight: normal;
       color: $hotpink;
-      opacity: 0.55;
+      @include opacity(55);
 
       .title {
         text-align: right;
