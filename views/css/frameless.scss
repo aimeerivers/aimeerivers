@@ -219,7 +219,10 @@ Zoomed out below 320 px
   }
 
   ul.contact-icons {
-    padding-top: 20px;
+    padding: 0.5em 0 0.4em 0;
+    margin: 1em 0;
+    border-top: 1px solid $hotpink;
+    border-bottom: 1px solid $hotpink;
     text-align: center;
 
     li {
@@ -280,8 +283,6 @@ Zoomed in above 480 px
   }
 
   ul.contact-icons {
-    padding-top: 26px;
-
     li {
       margin-left: 16px;
     }
@@ -317,11 +318,12 @@ Zoomed in above 600 px
   }
 
   ul.contact-icons {
-    margin-left: $gutter;
+    margin: 0 0 0 $gutter;
     padding-left: $cols6;
     padding-top: 27px;
     width: $cols4;
     text-align: right;
+    border: none;
 
     li {
       margin-left: 4px;
