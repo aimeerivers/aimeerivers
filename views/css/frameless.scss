@@ -9,6 +9,8 @@ licensed under CC0  <http://creativecommons.org/publicdomain/zero/1.0/>
 // Configuration
 //
 
+@import 'css3_mixins.scss';
+
 $font-size: 17px;     // Your base font-size in pixels
 $em: $font-size / 1em;  // Shorthand for outputting ems
 
@@ -46,7 +48,6 @@ $cols16: (16 * ($column + $gutter) - $gutter) / $em;
 @mixin width ($cols:1) {
   width: ($cols * ($column + $gutter) - $gutter) / $em;
 }
-
 
 /*
 Margin, padding, and border resets
@@ -229,9 +230,7 @@ Zoomed out below 320 px
         width: 44px;
         height: 44px;
         background-image: url(/images/social-icons-44.png);
-        -webkit-border-radius: 22px;
-        -moz-border-radius: 22px;
-        border-radius: 21px;
+        @include border_radius(22px);
 
         &:hover {
           span.triangle {
@@ -332,9 +331,7 @@ Zoomed in above 600 px
         width: 32px;
         height: 32px;
         background-image: url(/images/social-icons-32.png);
-        -webkit-border-radius: 16px;
-        -moz-border-radius: 16px;
-        border-radius: 16px;
+        @include border_radius(16px);
 
         &:hover {
           span.triangle {
@@ -406,9 +403,7 @@ Zoomed in above 912 px
         width: 44px;
         height: 44px;
         background-image: url(/images/social-icons-44.png);
-        -webkit-border-radius: 22px;
-        -moz-border-radius: 22px;
-        border-radius: 22px;
+        @include border_radius(22px);
 
         &:hover {
           span.triangle {
