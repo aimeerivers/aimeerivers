@@ -105,18 +105,15 @@ body {
   }
 
   .contact-details {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    padding-top: 0.2em;
-    padding-bottom: 0.2em;
-    height: 1.3em;
-    border-top: 1px solid #e8e8e8;
-    border-bottom: 1px solid #e8e8e8;
     color: #b1b1b1;
-    font-size: 17px;
+    @include clearfix;
+
+    .email {
+      float: left;
+    }
 
     .tel {
-      text-align: right;
+      float: right;
     }
   }
 }

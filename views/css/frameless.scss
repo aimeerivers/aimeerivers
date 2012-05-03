@@ -256,6 +256,16 @@ Zoomed out below 320 px
     }
   }
 
+  .contact-details {
+    border-bottom: 1px solid $palegrey;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+
+    div {
+      font-size: 0.95em;
+    }
+  }
+
 }
 
 /*
@@ -285,6 +295,12 @@ Zoomed in above 480 px
   ul.contact-icons {
     li {
       margin-left: 16px;
+    }
+  }
+
+  .contact-details {
+    div {
+      font-size: 1em;
     }
   }
 
@@ -358,6 +374,9 @@ Zoomed in above 600 px
 
   .contact-details {
     clear: left;
+    margin-top: 2em;
+    padding-top: 0.5em;
+    border-top: 1px solid $palegrey;
 
     .email {
       width: $cols6;
