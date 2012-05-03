@@ -229,7 +229,7 @@ Zoomed out below 320 px
     text-align: center;
 
     li {
-      margin-left: 12px;
+      margin-left: 12px / $em;
 
       a {
         width: 44px;
@@ -295,7 +295,7 @@ Zoomed in above 480 px
 
   ul.contact-icons {
     li {
-      margin-left: 16px;
+      margin-left: 16px / $em;
     }
   }
 
@@ -341,7 +341,7 @@ Zoomed in above 600 px
     border: none;
 
     li {
-      margin-left: 4px;
+      margin-left: 4px / $em;
 
       a {
         width: 32px;
@@ -414,7 +414,7 @@ Zoomed in above 912 px
     width: $cols8;
 
     li {
-      margin-left: 12px;
+      margin-left: 12px / $em;
 
       a {
         width: 44px;
