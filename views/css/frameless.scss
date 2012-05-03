@@ -213,8 +213,8 @@ Zoomed out below 320 px
     }
 
     .title {
-      font-size: 19px;
-      line-height: 19px;
+      font-size: 20px / $em;
+      line-height: 0.9em;
     }
   }
 
@@ -286,8 +286,7 @@ Zoomed in above 480 px
     }
 
     .title {
-      font-size: 25px;
-      line-height: 25px;
+      font-size: 27px / $em;
     }
   }
 
@@ -326,8 +325,7 @@ Zoomed in above 600 px
     }
 
     .title {
-      font-size: 19px;
-      line-height: 19px;
+      font-size: 20px / $em;
     }
   }
 
@@ -404,8 +402,7 @@ Zoomed in above 912 px
     }
 
     .title {
-      font-size: 25px;
-      line-height: 25px;
+      font-size: 27px / $em;
     }
   }
 
