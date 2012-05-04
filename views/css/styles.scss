@@ -7,7 +7,7 @@
 @import 'variables.scss';
 
 body {
-  background-color: #f8f8f8;
+  background-color: $pagebackground;
   color: #747474;
 
   font-family: 'Lustria', serif;
@@ -115,6 +115,48 @@ body {
 
     .tel {
       float: right;
+    }
+  }
+
+  nav {
+    background-image: url(/images/pink-line.png);
+    background-repeat: repeat-x;
+    background-position: left center;
+    margin: 1em auto;
+
+    ul {
+      text-align: center;
+      list-style-type: none;
+
+      li {
+        display: inline;
+        background-color: $pagebackground;
+        margin: 0;
+
+        &:first-child {
+          padding-left: 10px;
+        }
+
+        &:last-child {
+          padding-right: 10px;
+        }
+
+        a {
+          padding: 4px 10px;
+          @include border_radius(1em);
+          color: $hotpink;
+          text-decoration: none;
+
+          &.active, &.active:hover {
+            background-color: $hotpink;
+            color: #fff;
+          }
+
+          &:hover {
+            background-color: $palepink;
+          }
+        }
+      }
     }
   }
 }

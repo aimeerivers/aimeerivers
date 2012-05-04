@@ -455,4 +455,8 @@ Zoomed in above 912 px
     }
   }
 
+  nav {
+    @include width(14);
+  }
+
 }
