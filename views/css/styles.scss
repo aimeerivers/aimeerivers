@@ -176,6 +176,11 @@ body {
     ul.contact-icons li a {
       background-image: url(/images/social-icons-64.png);
       background-size: 32px;
+
+      &:hover span.triangle {
+        background-image: url(/images/tooltip-triangle-14.png);
+        background-size: 7px;
+      }
     }
   }
 
