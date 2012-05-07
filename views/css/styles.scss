@@ -172,9 +172,11 @@ body {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
 
-  ul.contact-icons li a {
-    background-image: url(/images/social-icons-64.png);
-    background-size: 32px;
+  body {
+    ul.contact-icons li a {
+      background-image: url(/images/social-icons-64.png);
+      background-size: 32px;
+    }
   }
 
 }
