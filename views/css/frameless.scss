@@ -229,33 +229,33 @@ Zoomed out below 320 px
     text-align: center;
 
     li {
-      margin-left: 12px / $em;
+      margin-left: 8px / $em;
 
       a {
-        width: 44px;
-        height: 44px;
-        background-image: url(/images/social-icons-44.png);
-        @include border_radius(22px);
+        width: 32px;
+        height: 32px;
+        background-image: url(/images/social-icons-32.png);
+        @include border_radius(16px);
 
         &:hover {
           span.triangle {
-            right: 19px;
-            top: 46px;
+            right: 13px;
+            top: 35px;
           }
 
           span.tooltip {
-            font-size: $font-size / $em;
-            padding: 6px 16px;
-            top: 50px;
+            font-size: ($font-size - 2) / $em;
+            padding: 5px 14px;
+            top: 39px;
           }
         }
       }
 
       &.cv a { background-position: 0 0; }
-      &.linked-in a { background-position: 0 -43px; }
-      &.github a { background-position: 0 -87px; }
-      &.twitter a { background-position: 0 -131px; }
-      &.skype a { background-position: 0 -175px; }
+      &.linked-in a { background-position: 0 -31px; }
+      &.github a { background-position: 0 -63px; }
+      &.twitter a { background-position: 0 -95px; }
+      &.skype a { background-position: 0 -127px; }
     }
   }
 
@@ -295,7 +295,7 @@ Zoomed in above 480 px
 
   ul.contact-icons {
     li {
-      margin-left: 16px / $em;
+      margin-left: 12px / $em;
     }
   }
 
@@ -346,32 +346,6 @@ Zoomed in above 600 px
 
     li {
       margin-left: 4px / $em;
-
-      a {
-        width: 32px;
-        height: 32px;
-        background-image: url(/images/social-icons-32.png);
-        @include border_radius(16px);
-
-        &:hover {
-          span.triangle {
-            right: 13px;
-            top: 35px;
-          }
-
-          span.tooltip {
-            font-size: ($font-size - 2) / $em;
-            padding: 5px 14px;
-            top: 39px;
-          }
-        }
-      }
-
-      &.cv a { background-position: 0 0; }
-      &.linked-in a { background-position: 0 -31px; }
-      &.github a { background-position: 0 -63px; }
-      &.twitter a { background-position: 0 -95px; }
-      &.skype a { background-position: 0 -127px; }
     }
   }
 

@@ -172,31 +172,9 @@ body {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
 
-  ul.contact-icons li {
-    a {
-      background-image: url(/images/social-icons-64.png);
-      background-size: 32px;
-      width: 32px;
-      height: 32px;
-      @include border_radius(16px);
-
-      &:hover {
-        span.triangle {
-          right: 13px;
-          top: 33px;
-        }
-
-        span.tooltip {
-          top: 37px;
-        }
-      }
-    }
-
-    &.cv a { background-position: 0 0; }
-    &.linked-in a { background-position: 0 -31px; }
-    &.github a { background-position: 0 -63px; }
-    &.twitter a { background-position: 0 -95px; }
-    &.skype a { background-position: 0 -127px; }
+  ul.contact-icons li a {
+    background-image: url(/images/social-icons-64.png);
+    background-size: 32px;
   }
 
   /*	.logo {
