@@ -8,6 +8,13 @@
     %link(href="css/frameless.css" media="screen" rel="stylesheet" type="text/css")
     %link(href="css/styles.css" media="screen" rel="stylesheet" type="text/css")
 
+    -# Link to OpenID
+    %link(rel="openid.server" href="http://www.myopenid.com/server")
+    %link(rel="openid.delegate" href="http://sermoa.myopenid.com/")
+    %link(rel="openid2.local_id" href="http://sermoa.myopenid.com")
+    %link(rel="openid2.provider" href="http://www.myopenid.com/server")
+    %meta(http-equiv="X-XRDS-Location" content="http://www.myopenid.com/xrds?username=sermoa.myopenid.com")
+
   %body
     .header.vcard
       .name-and-title
