@@ -167,40 +167,35 @@ body {
 
   .portfolio {
     .example {
-      margin: 5em 0;
-
       &.browser {
+        .top, .bottom, .left, .right {
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+        }
+
         .top {
-          width: 550px;
-          height: 39px;
           background-image: url(/images/browser-chrome/top.png);
         }
 
         .bottom {
           clear: left;
-          width: 550px;
-          height: 21px;
           background-image: url(/images/browser-chrome/bottom.png);
         }
 
         .left, .right, .screenshot {
           float: left;
-          height: 292px;
         }
 
         .left {
-          width: 44px;
           background-image: url(/images/browser-chrome/left.png);
         }
 
         .right {
-          width: 28px;
           background-image: url(/images/browser-chrome/right.png);
         }
 
         .screenshot {
           display: inline-block;
-          width: 478px;
         }
       }
     }

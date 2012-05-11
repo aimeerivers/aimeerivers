@@ -269,7 +269,27 @@ Zoomed out below 320 px
     }
   }
 
+  .portfolio {
+    .example {
+      margin: 3em 0;
+
+      &.browser {
+        .top, .bottom { width: 312px; }
+        .top { height: 22px; }
+        .bottom { height: 11px; }
+        .left, .right, .screenshot { height: 167px; }
+        .left { width: 25px; }
+        .right { width: 9px; }
+        .screenshot img {
+          width: 272px;
+          height: 167px;
+        }
+      }
+    }
+  }
+
 }
+
 
 /*
 Wide mobile layout
@@ -431,6 +451,25 @@ Zoomed in above 912 px
 
   nav {
     @include width(14);
+  }
+
+  .portfolio {
+    .example {
+      margin: 5em 0;
+
+      &.browser {
+        .top, .bottom { width: 550px; }
+        .top { height: 39px; }
+        .bottom { height: 21px; }
+        .left, .right, .screenshot { height: 292px; }
+        .left { width: 44px; }
+        .right { width: 28px; }
+        .screenshot img {
+          width: 478px;
+          height: 292px;
+        }
+      }
+    }
   }
 
 }
