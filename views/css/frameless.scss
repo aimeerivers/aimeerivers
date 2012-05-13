@@ -325,6 +325,25 @@ Zoomed in above 480 px
     }
   }
 
+  .portfolio {
+    .example {
+      margin: 4em 0;
+
+      &.browser {
+        .top, .bottom { width: 282px; }
+        .top { height: 19px; }
+        .bottom { height: 10px; }
+        .left, .right, .screenshot { height: 149px; }
+        .left { width: 23px; }
+        .right { width: 9px; }
+        .screenshot img {
+          width: 245px;
+          height: 149px;
+        }
+      }
+    }
+  }
+
 }
 
 /*
