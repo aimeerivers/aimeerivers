@@ -400,6 +400,25 @@ Zoomed in above 600 px
     }
   }
 
+  .portfolio {
+    .example {
+      margin: 5em 0;
+
+      &.browser {
+        .top, .bottom { width: 545px; }
+        .top { height: 39px; }
+        .bottom { height: 21px; }
+        .left, .right, .screenshot { height: 289px; }
+        .left { width: 44px; }
+        .right { width: 28px; }
+        .screenshot img {
+          width: 473px;
+          height: 289px;
+        }
+      }
+    }
+  }
+
 }
 
 /*
@@ -474,15 +493,11 @@ Zoomed in above 912 px
 
   .portfolio {
     .example {
-      margin: 5em 0;
+      margin: 6em 0;
 
       &.browser {
         .top, .bottom { width: 550px; }
-        .top { height: 39px; }
-        .bottom { height: 21px; }
         .left, .right, .screenshot { height: 292px; }
-        .left { width: 44px; }
-        .right { width: 28px; }
         .screenshot img {
           width: 478px;
           height: 292px;
