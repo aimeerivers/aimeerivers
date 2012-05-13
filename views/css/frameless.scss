@@ -503,6 +503,11 @@ Zoomed in above 912 px
 
 @media screen and (min-width: 57em) {
 
+  p, blockquote {
+    font-size: 16px / $em;
+    line-height: 26px / $em;
+  }
+
   .header, nav, .portfolio, .row {
     width: $cols16;
   }
@@ -576,6 +581,17 @@ Zoomed in above 912 px
           width: 478px;
           height: 292px;
         }
+      }
+
+      .picture {
+        float: left;
+        margin-left: $cols1;
+      }
+
+      .details {
+        float: right;
+        @include width(4);
+        margin-right: $cols1;
       }
     }
   }
