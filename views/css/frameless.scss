@@ -201,6 +201,17 @@ Zoomed out below 320 px
 
 @media screen and (min-width: 15em) {
 
+  h1 {
+    font-size: 28px / $em;
+    margin-top: 1em;
+  }
+
+  p, blockquote {
+    font-size: 13px / $em;
+    line-height: 22px / $em;
+    margin-top: 10px / $em;
+  }
+
   .header, nav, .portfolio, .row {
     width: 19.5em;
     margin: 0 auto;
@@ -283,6 +294,22 @@ Zoomed out below 320 px
         .screenshot img {
           width: 272px;
           height: 167px;
+        }
+      }
+    }
+
+    .details {
+      @include width(5);
+      margin: 0 auto;
+
+      .link {
+        margin-top: 0.5em;
+
+        a {
+          font-size: 16px / $em;
+          color: $hotpink;
+          text-decoration: none;
+          border-bottom: 1px solid $hotpink;
         }
       }
     }
