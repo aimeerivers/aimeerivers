@@ -355,6 +355,7 @@ Zoomed in above 480 px
   .portfolio {
     .example {
       margin: 4em 0;
+      @include clearfix;
 
       &.browser {
         .top, .bottom { width: 282px; }
@@ -368,6 +369,23 @@ Zoomed in above 480 px
           height: 149px;
         }
       }
+
+      .picture {
+        float: left;
+      }
+
+      .details {
+        float: right;
+        @include width(3);
+
+        h1 {
+          margin-top: 0;
+        }
+      }
+    }
+
+    .switcher {
+      clear: both;
     }
   }
 
