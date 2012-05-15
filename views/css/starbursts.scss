@@ -30,11 +30,11 @@ $starburst_color: #FE57A1;
   }
 }
 
-@mixin triangle() {
+@mixin triangle($height) {
   width: 0px;
   height: 0px;
   border-style: solid;
-  border-width: 0 150px 259.8px 150px;
+  border-width: 0 $height/2 $height*0.866 $height/2;
   border-color: transparent transparent $starburst_color transparent;
   -moz-border-style: inset;
 }
@@ -50,54 +50,50 @@ $starburst_color: #FE57A1;
     position: absolute;
   }
 
+  .triangle {
+    @include triangle(300px);
+  }
+
   .triangle1 {
-    @include triangle();
     @include rotate(360deg);
   }
 
   .triangle2 {
-    @include triangle();
     @include rotate(180deg);
     top: 80px;
   }
 
   .triangle3 {
-    @include triangle();
     @include rotate(90deg);
     top: 40px;
     left: 40px;
   }
 
   .triangle4 {
-    @include triangle();
     @include rotate(270deg);
     top: 40px;
     left: -40px;
   }
 
   .triangle5 {
-    @include triangle();
     @include rotate(45deg);
     top: 10px;
     left: 30px;
   }
 
   .triangle6 {
-    @include triangle();
     @include rotate(135deg);
     top: 70px;
     left: 30px;
   }
 
   .triangle7 {
-    @include triangle();
     @include rotate(225deg);
     top: 70px;
     left: -30px;
   }
 
   .triangle8 {
-    @include triangle();
     @include rotate(315deg);
     top: 10px;
     left: -30px;
