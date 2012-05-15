@@ -1,0 +1,115 @@
+$page_background_color: #F8F8F8;
+$starburst_color: #FE57A1;
+
+@mixin rotate($amount) {
+  transform:rotate($amount);
+  -ms-transform:rotate($amount);
+  -moz-transform:rotate($amount);
+  -webkit-transform:rotate($amount);
+  -o-transform:rotate($amount);
+}
+
+.starburst1 {
+  float: left;
+  width: 300px;
+  height: 300px;
+  border-radius: 170px;
+  border: 9px dotted $page_background_color;
+
+  background-color: $starburst_color;
+  margin: 50px;
+
+   p {
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    margin-top: 70px;
+    font-weight: bold;
+    text-shadow: -1px -1px 5px #000;
+    @include rotate(-7deg);
+  }
+}
+
+@mixin triangle() {
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 150px 259.8px 150px;
+  border-color: transparent transparent $starburst_color transparent;
+  -moz-border-style: inset;
+}
+
+.starburst2 {
+  margin: 50px;
+  margin-left: 500px;
+  width: 300px;
+  height: 300px;
+  position: relative;
+
+  * {
+    position: absolute;
+  }
+
+  .triangle1 {
+    @include triangle();
+    @include rotate(360deg);
+  }
+
+  .triangle2 {
+    @include triangle();
+    @include rotate(180deg);
+    top: 80px;
+  }
+
+  .triangle3 {
+    @include triangle();
+    @include rotate(90deg);
+    top: 40px;
+    left: 40px;
+  }
+
+  .triangle4 {
+    @include triangle();
+    @include rotate(270deg);
+    top: 40px;
+    left: -40px;
+  }
+
+  .triangle5 {
+    @include triangle();
+    @include rotate(45deg);
+    top: 10px;
+    left: 30px;
+  }
+
+  .triangle6 {
+    @include triangle();
+    @include rotate(135deg);
+    top: 70px;
+    left: 30px;
+  }
+
+  .triangle7 {
+    @include triangle();
+    @include rotate(225deg);
+    top: 70px;
+    left: -30px;
+  }
+
+  .triangle8 {
+    @include triangle();
+    @include rotate(315deg);
+    top: 10px;
+    left: -30px;
+  }
+
+  p {
+    text-align: center;
+    color: white;
+    font-size: 55px;
+    margin-top: 80px;
+    font-weight: bold;
+    text-shadow: -1px -1px 5px #000;
+    @include rotate(7deg);
+  }
+}

@@ -11,6 +11,10 @@ get '/' do
   haml :index
 end
 
+get '/starbursts' do
+  haml :starbursts
+end
+
 get '/css/:name.css' do
   content_type 'text/css', charset: 'utf-8'
   scss :"css/#{params[:name]}"
