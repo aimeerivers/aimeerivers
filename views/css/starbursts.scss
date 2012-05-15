@@ -128,17 +128,9 @@ $starburst_color: #FE57A1;
     background-color: #56FD5F;
   }
 
-  .square2 {
-    @include rotate(45deg);
-  }
-
-  .square3 {
-    @include rotate(22.5deg);
-  }
-
-  .square4 {
-    @include rotate(67.5deg);
-  }
+  .square2 { @include rotate(45deg); }
+  .square3 { @include rotate(22.5deg); }
+  .square4 { @include rotate(67.5deg); }
 
   p {
     text-align: center;
