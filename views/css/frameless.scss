@@ -280,6 +280,12 @@ Zoomed out below 320 px
     }
   }
 
+  nav {
+    ul li {
+      font-size: 14px / $em;
+    }
+  }
+
   .portfolio {
     .example {
       margin: 3em 0;
@@ -360,6 +366,12 @@ Zoomed in above 480 px
   .contact-details {
     div {
       font-size: 1em;
+    }
+  }
+
+  nav {
+    ul li {
+      font-size: 16px / $em;
     }
   }
 
@@ -472,6 +484,12 @@ Zoomed in above 600 px
     .email {
       width: $cols6;
       float: left;
+    }
+  }
+
+  nav {
+    ul li {
+      font-size: 17px / $em;
     }
   }
 
@@ -605,6 +623,10 @@ Zoomed in above 912 px
 
   nav {
     @include width(14);
+
+    ul li {
+      font-size: 18px / $em;
+    }
   }
 
   .portfolio {
