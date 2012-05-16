@@ -400,6 +400,16 @@ Zoomed in above 480 px
     }
   }
 
+  .about-me {
+    @include width(4);
+    float: left;
+  }
+
+  .testimonials {
+    @include width(4);
+    float: right;
+  }
+
 }
 
 /*
@@ -504,7 +514,13 @@ Zoomed in above 600 px
     }
   }
 
+  .about-me {
+    @include width(5);
+  }
+
   .testimonials {
+    @include width(5);
+
     blockquote:before, blockquote:after {
       font-size: 60px / $em;
     }
@@ -617,7 +633,15 @@ Zoomed in above 912 px
     }
   }
 
+  .about-me {
+    @include width(6);
+    margin-left: $cols1;
+  }
+
   .testimonials {
+    @include width(6);
+    margin-right: $cols1;
+
     blockquote:before, blockquote:after {
       font-size: 65px / $em;
     }
