@@ -316,6 +316,10 @@ Zoomed out below 320 px
   }
 
   .testimonials {
+    blockquote:before, blockquote:after {
+      font-size: 45px / $em;
+    }
+
     .attribution {
       font-size: 14px / $em;
       margin-top: 0.5em;
@@ -501,6 +505,10 @@ Zoomed in above 600 px
   }
 
   .testimonials {
+    blockquote:before, blockquote:after {
+      font-size: 60px / $em;
+    }
+
     .attribution {
       font-size: 15px / $em;
     }
@@ -610,6 +618,10 @@ Zoomed in above 912 px
   }
 
   .testimonials {
+    blockquote:before, blockquote:after {
+      font-size: 65px / $em;
+    }
+
     .attribution {
       font-size: 16px / $em;
     }
