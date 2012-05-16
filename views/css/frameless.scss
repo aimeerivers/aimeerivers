@@ -322,6 +322,8 @@ Zoomed out below 320 px
   }
 
   .testimonials {
+    padding-bottom: 1em;
+
     blockquote:before, blockquote:after {
       font-size: 45px / $em;
     }
@@ -410,6 +412,10 @@ Zoomed in above 480 px
     .switcher {
       clear: both;
     }
+  }
+
+  .about-me, .testimonials {
+    padding-bottom: 1.5em;
   }
 
   .about-me {
@@ -536,6 +542,10 @@ Zoomed in above 600 px
     @include width(5);
   }
 
+  .about-me, .testimonials {
+    padding-bottom: 3em;
+  }
+
   .testimonials {
     @include width(5);
 
@@ -653,6 +663,10 @@ Zoomed in above 912 px
         margin-right: $cols1;
       }
     }
+  }
+
+  .about-me, .testimonials {
+    padding-bottom: 5em;
   }
 
   .about-me {
