@@ -290,7 +290,8 @@ Zoomed out below 320 px
     .example {
 
       &.browser {
-        margin: 3em 0;
+        margin: 2.5em 0;
+        height: 21em;
         .top, .bottom { width: 312px; }
         .top { height: 22px; }
         .bottom { height: 11px; }
@@ -309,7 +310,8 @@ Zoomed out below 320 px
       }
 
       &.android {
-        margin: 6em 0;
+        margin: 5em 0;
+        height: 16em;
         .top, .bottom { width: 150px; }
         .top { height: 32px; }
         .bottom { height: 58px; }
@@ -411,6 +413,7 @@ Zoomed in above 480 px
 
       &.browser {
         margin: 4em 0;
+        height: 12em;
         .top, .bottom { width: 282px; }
         .top { height: 19px; }
         .bottom { height: 10px; }
@@ -433,7 +436,8 @@ Zoomed in above 480 px
       }
 
       &.android {
-        margin: 1.5em 0;
+        margin: 2em 0;
+        height: 16em;
 
         .picture {
           margin-left: $cols1;
@@ -539,7 +543,8 @@ Zoomed in above 600 px
     .example {
 
       &.browser {
-        margin: 5em 0;
+        margin: 3em 0;
+        height: 34em;
         .top, .bottom { width: 545px; }
         .top { height: 39px; }
         .bottom { height: 21px; }
@@ -566,7 +571,8 @@ Zoomed in above 600 px
       }
 
       &.android {
-        margin: 6.5em 0;
+        margin: 4em 0;
+        height: 32em;
         .top, .bottom { width: 300px; }
         .top { height: 65px; }
         .bottom { height: 116px; }
@@ -705,7 +711,8 @@ Zoomed in above 912 px
     .example {
 
       &.browser {
-        margin: 9em 0;
+        margin: 7.5em 0;
+        height: 22em;
         .top, .bottom { width: 550px; }
         .left, .right, .screenshot { height: 292px; }
         .screenshot img {
@@ -726,7 +733,8 @@ Zoomed in above 912 px
       }
 
       &.android {
-        margin: 4em 0;
+        margin: 2em 0;
+        height: 33em;
 
         .picture {
           margin-left: $cols3;
