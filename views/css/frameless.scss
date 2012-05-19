@@ -537,9 +537,9 @@ Zoomed in above 600 px
 
   .portfolio {
     .example {
-      margin: 5em 0;
 
       &.browser {
+        margin: 5em 0;
         .top, .bottom { width: 545px; }
         .top { height: 39px; }
         .bottom { height: 21px; }
@@ -550,20 +550,46 @@ Zoomed in above 600 px
           width: 473px;
           height: 289px;
         }
+
+        .picture {
+          float: none;
+        }
+
+        .details {
+          float: none;
+          @include width(8);
+
+          h1 {
+            margin-top: 1em;
+          }
+        }
       }
 
-      .picture {
-        float: none;
+      &.android {
+        margin: 3em 0;
+        .top, .bottom { width: 300px; }
+        .top { height: 65px; }
+        .bottom { height: 116px; }
+        .left, .right, .screenshot { height: 334px; }
+        .left { width: 46px; }
+        .right { width: 54px; }
+        .screenshot img {
+          width: 200px;
+          height: 334px;
+        }
+
+        .picture {
+          margin-left: 0;
+        }
+
+        .details {
+          @include width(4);
+          margin-right: 0;
+          margin-top: 2em;
+        }
       }
 
       .details {
-        float: none;
-        @include width(8);
-
-        h1 {
-          margin-top: 1em;
-        }
-
         .link {
           margin-top: 1em;
           a {
