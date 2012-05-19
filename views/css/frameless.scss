@@ -408,10 +408,9 @@ Zoomed in above 480 px
 
   .portfolio {
     .example {
-      margin: 4em 0;
-      @include clearfix;
 
       &.browser {
+        margin: 4em 0;
         .top, .bottom { width: 282px; }
         .top { height: 19px; }
         .bottom { height: 10px; }
@@ -422,19 +421,31 @@ Zoomed in above 480 px
           width: 245px;
           height: 149px;
         }
+
+        .details {
+          float: right;
+          @include width(3);
+
+          h1 {
+            margin-top: 0;
+          }
+        }
+      }
+
+      &.android {
+        margin: 2em 0;
+
+        .picture {
+          margin-left: $cols1;
+        }
+
+        .details {
+          margin-right: $cols1;
+        }
       }
 
       .picture {
         float: left;
-      }
-
-      .details {
-        float: right;
-        @include width(3);
-
-        h1 {
-          margin-top: 0;
-        }
       }
     }
   }
