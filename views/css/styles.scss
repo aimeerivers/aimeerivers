@@ -163,6 +163,7 @@ body {
 
   .portfolio {
     .example {
+      @include clearfix;
 
       .top, .bottom, .left, .right {
         background-repeat: no-repeat;

@@ -288,9 +288,9 @@ Zoomed out below 320 px
 
   .portfolio {
     .example {
-      margin: 3em 0;
 
       &.browser {
+        margin: 3em 0;
         .top, .bottom { width: 312px; }
         .top { height: 22px; }
         .bottom { height: 11px; }
@@ -301,26 +301,38 @@ Zoomed out below 320 px
           width: 272px;
           height: 167px;
         }
+
+        .details {
+          @include width(5);
+          margin: 0 auto;
+        }
       }
 
       &.android {
-        .top, .bottom { width: 300px; }
-        .top { height: 65px; }
-        .bottom { height: 116px; }
-        .left, .right, .screenshot { height: 334px; }
-        .left { width: 46px; }
-        .right { width: 54px; }
+        margin: 1em 0;
+        .top, .bottom { width: 150px; }
+        .top { height: 32px; }
+        .bottom { height: 58px; }
+        .left, .right, .screenshot { height: 167px; }
+        .left { width: 23px; }
+        .right { width: 27px; }
         .screenshot img {
-          width: 200px;
-          height: 334px;
+          width: 100px;
+          height: 167px;
+        }
+
+        .picture {
+          float: left;
+        }
+
+        .details {
+          @include width(3);
+          float: right;
         }
       }
     }
 
     .details {
-      @include width(5);
-      margin: 0 auto;
-
       .link {
         margin-top: 0.5em;
 
@@ -331,6 +343,10 @@ Zoomed out below 320 px
           border-bottom: 1px solid $hotpink;
         }
       }
+    }
+
+    .switcher {
+      clear: both;
     }
   }
 
@@ -420,10 +436,6 @@ Zoomed in above 480 px
           margin-top: 0;
         }
       }
-    }
-
-    .switcher {
-      clear: both;
     }
   }
 
