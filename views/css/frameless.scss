@@ -302,6 +302,19 @@ Zoomed out below 320 px
           height: 167px;
         }
       }
+
+      &.android {
+        .top, .bottom { width: 300px; }
+        .top { height: 65px; }
+        .bottom { height: 116px; }
+        .left, .right, .screenshot { height: 334px; }
+        .left { width: 46px; }
+        .right { width: 54px; }
+        .screenshot img {
+          width: 200px;
+          height: 334px;
+        }
+      }
     }
 
     .details {

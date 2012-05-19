@@ -163,23 +163,31 @@ body {
 
   .portfolio {
     .example {
-      &.browser {
-        .top, .bottom, .left, .right {
-          background-repeat: no-repeat;
-          background-size: 100% 100%;
-        }
 
+      .top, .bottom, .left, .right {
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+
+      .left, .right, .screenshot {
+        float: left;
+      }
+
+      .bottom {
+        clear: left;
+      }
+
+      .screenshot {
+        display: inline-block;
+      }
+
+      &.browser {
         .top {
           background-image: url(/images/browser-chrome/top.png);
         }
 
         .bottom {
-          clear: left;
           background-image: url(/images/browser-chrome/bottom.png);
-        }
-
-        .left, .right, .screenshot {
-          float: left;
         }
 
         .left {
@@ -189,11 +197,26 @@ body {
         .right {
           background-image: url(/images/browser-chrome/right.png);
         }
+      }
 
-        .screenshot {
-          display: inline-block;
+      &.android {
+        .top {
+          background-image: url(/images/android-chrome/top.png);
+        }
+
+        .bottom {
+          background-image: url(/images/android-chrome/bottom.png);
+        }
+
+        .left {
+          background-image: url(/images/android-chrome/left.png);
+        }
+
+        .right {
+          background-image: url(/images/android-chrome/right.png);
         }
       }
+
     }
   }
 
