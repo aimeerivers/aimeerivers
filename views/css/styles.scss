@@ -253,15 +253,47 @@ body {
     border: 0;
 
     .flex-control-nav {
+      background-image: url(/images/flexslider/grey-line.png);
+      background-repeat: repeat-x;
+      background-position: left 7px;
       bottom: 0;
-      li a {
-        background-image: url(/images/flexslider/bg_control_nav.png);
+      height: 28px;
+
+      li {
+        background-color: $pagebackground;
+        margin: 0;
+        padding: 1px;
+
+        &:first-child {
+          padding-left: 10px;
+        }
+
+        &:last-child {
+          padding-right: 10px
+        }
+
+        a {
+          background-image: url(/images/flexslider/bg_control_nav.png);
+        }
       }
     }
 
     .flex-direction-nav {
+      margin-top: 40px;
+
       li a {
         background-image: url(/images/flexslider/bg_direction_nav.png);
+        top: auto;
+        bottom: -9px;
+        margin-top: 10px;
+
+        &.prev {
+          left: 0;
+        }
+
+        &.next {
+          right: 0;
+        }
       }
     }
   }
