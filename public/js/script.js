@@ -11,6 +11,8 @@ $.ready = function() {
     return false;
   });
 
-  $('.flexslider').flexslider();
+  $('.flexslider').flexslider({
+    animation: "slide"
+  });
 
 }
