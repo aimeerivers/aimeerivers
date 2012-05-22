@@ -9,6 +9,7 @@
     %link(rel="apple-touch-icon" href="/apple-touch-icon.png")
 
     %link(href="css/frameless.css" media="screen" rel="stylesheet" type="text/css")
+    %link(href="css/flexslider.css" media="screen" rel="stylesheet" type="text/css")
     %link(href="css/styles.css" media="screen" rel="stylesheet" type="text/css")
 
     -# Link to OpenID
@@ -62,37 +63,38 @@
 
     .portfolio
 
-      .section#freelance-work
+      .flexslider.section#freelance-work
+        %ul.slides
 
-        .example.android
-          .picture
-            .top
-            .left
-            .screenshot
-              %a(href="https://play.google.com/store/apps/details?id=org.buffer.android")
-                %img(src="/images/freelance/buffer.jpg")
-            .right
-            .bottom
-          .details
-            %h1 Buffer for Android
-            %p A complete overhaul of its simplistic predecessor, version 2 of Buffer for Android now provides a fully functional native Android app which communicates with the Buffer API.
-            .link
-              %a(href="https://play.google.com/store/apps/details?id=org.buffer.android") view
+          %li.example.android
+            .picture
+              .top
+              .left
+              .screenshot
+                %a(href="https://play.google.com/store/apps/details?id=org.buffer.android")
+                  %img(src="/images/freelance/buffer.jpg")
+              .right
+              .bottom
+            .details
+              %h1 Buffer for Android
+              %p A complete overhaul of its simplistic predecessor, version 2 of Buffer for Android now provides a fully functional native Android app which communicates with the Buffer API.
+              .link
+                %a(href="https://play.google.com/store/apps/details?id=org.buffer.android") view
 
-        .example.browser
-          .picture
-            .top
-            .left
-            .screenshot
-              %a(href="http://www.boxedup.com")
-                %img(src="/images/freelance/boxedup.jpg")
-            .right
-            .bottom
-          .details
-            %h1 BoxedUp
-            %p A rewrite of BoxedUp had been ongoing for over a year. I worked with them to finally get it launched. Huge data migrations, Rails, MongoDB and Resque.
-            .link
-              %a(href="http://www.boxedup.com") view
+          %li.example.browser
+            .picture
+              .top
+              .left
+              .screenshot
+                %a(href="http://www.boxedup.com")
+                  %img(src="/images/freelance/boxedup.jpg")
+              .right
+              .bottom
+            .details
+              %h1 BoxedUp
+              %p A rewrite of BoxedUp had been ongoing for over a year. I worked with them to finally get it launched. Huge data migrations, Rails, MongoDB and Resque.
+              .link
+                %a(href="http://www.boxedup.com") view
 
       .section#pet-projects
 
@@ -130,6 +132,7 @@
     :javascript
       window.jQuery || document.write('<script src="/js/libs/jquery-1.7.2.min.js"><\/script>')
 
+    %script(src="/js/libs/jquery.flexslider-min.js")
     %script(src="/js/script.js")
 
     :javascript

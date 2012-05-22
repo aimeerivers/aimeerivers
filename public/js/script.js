@@ -11,4 +11,6 @@ $.ready = function() {
     return false;
   });
 
+  $('.flexslider').flexslider();
+
 }
