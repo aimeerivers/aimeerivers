@@ -255,6 +255,19 @@ body {
   .flexslider {
     background-color: $pagebackground;
     border: 0;
+
+    .flex-control-nav {
+      bottom: 0;
+      li a {
+        background-image: url(/images/flexslider/bg_control_nav.png);
+      }
+    }
+
+    .flex-direction-nav {
+      li a {
+        background-image: url(/images/flexslider/bg_direction_nav.png);
+      }
+    }
   }
 
 }
