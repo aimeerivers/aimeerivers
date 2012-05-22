@@ -440,11 +440,11 @@ Zoomed in above 480 px
         height: 16em;
 
         .picture {
-          margin-left: $cols1;
+          margin-left: $column + $gutter;
         }
 
         .details {
-          margin-right: $cols1;
+          margin-right: $column + $gutter;
         }
       }
 
@@ -722,13 +722,13 @@ Zoomed in above 912 px
 
         .picture {
           float: left;
-          margin-left: $cols1;
+          margin-left: $column + $gutter;
         }
 
         .details {
           float: right;
           @include width(4);
-          margin-right: $cols1;
+          margin-right: $column + $gutter;
         }
       }
 
@@ -751,16 +751,16 @@ Zoomed in above 912 px
     .flexslider {
       .flex-control-nav {
         width: $cols14;
-        margin-left: $cols1;
+        margin-left: $column + $gutter;
       }
 
       .flex-direction-nav {
         li a.prev {
-          left: $cols1;
+          left: $column + $gutter;
         }
 
         li a.next {
-          right: $cols1;
+          right: $column + $gutter;
         }
       }
     }
@@ -772,12 +772,12 @@ Zoomed in above 912 px
 
   .about-me {
     @include width(6);
-    margin-left: $cols1;
+    margin-left: $column + $gutter;
   }
 
   .testimonials {
     @include width(6);
-    margin-right: $cols1;
+    margin-right: $column + $gutter;
 
     blockquote:before, blockquote:after {
       font-size: 65px / $em;
