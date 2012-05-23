@@ -1,18 +1,73 @@
 var Flexslider = (
   function() {
     var self = {
-      elem: null,
+      started: [],
 
       init: function(element) {
-        self.elem = $('#' + element);
-        self.start();
+        if(self.started.indexOf(element) < 0) {
+          self.started.push(element);
+          self.start(element);
+        }
       },
 
-      start: function() {
-        self.elem.flexslider({
-          slideshowSpeed: 2000,
+      start: function(element) {
+        $('#' + element).flexslider({
+          slideshowSpeed: 1000,
           animation: 'slide'
         });
+      }
+    };
+
+    return self;
+  }
+)();
+
+var Navigation = (
+  function() {
+    var self = {
+      elem: null,
+      section: null,
+
+      init: function() {
+        $('nav ul li a').live('click', function(event) {
+          self.activate($(this));
+          return false;
+        });
+        return self;
+      },
+
+      activate: function(element) {
+        self.elem = element;
+        self.section = self.elem.attr('data-section');
+
+        self.hideTabs();
+        self.showThisTab();
+
+        self.hideContent();
+        self.showThisContent();
+
+        self.startSlider();
+        return false;
+      },
+
+      hideTabs: function() {
+        $('nav ul li a').removeClass('active');
+      },
+
+      showThisTab: function() {
+        self.elem.addClass('active');
+      },
+
+      hideContent: function() {
+        $('.portfolio .section').hide();
+      },
+
+      showThisContent: function() {
+        $('#' + self.section).show();
+      },
+
+      startSlider: function() {
+        Flexslider.init(self.section);
       }
     };
 
@@ -24,16 +79,5 @@ $.ready = function() {
 
   $('#pet-projects').hide();
 
-  $('nav ul li a').live('click', function() {
-    $('nav ul li a').removeClass('active');
-    $(this).addClass('active');
-    $('.portfolio .section').hide();
-    var section = $(this).attr('data-section');
-    $('#' + section).show();
-    Flexslider.init(section);
-    return false;
-  });
-
-  Flexslider.init('freelance-work');
-
+  Navigation.init().activate($('nav ul li:first-child a'));
 }
