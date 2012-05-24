@@ -291,7 +291,7 @@ Zoomed out below 320 px
 
       &.browser {
         margin: 2.5em 0;
-        height: 21em;
+        height: 23em;
         .top, .bottom { width: 312px; }
         .top { height: 22px; }
         .bottom { height: 11px; }
@@ -311,7 +311,7 @@ Zoomed out below 320 px
 
       &.android {
         margin: 5em 0;
-        height: 16em;
+        height: 18em;
         .top, .bottom { width: 150px; }
         .top { height: 32px; }
         .bottom { height: 58px; }
@@ -413,7 +413,7 @@ Zoomed in above 480 px
 
       &.browser {
         margin: 4em 0;
-        height: 12em;
+        height: 14em;
         .top, .bottom { width: 282px; }
         .top { height: 19px; }
         .bottom { height: 10px; }
@@ -437,7 +437,7 @@ Zoomed in above 480 px
 
       &.android {
         margin: 2em 0;
-        height: 16em;
+        height: 18em;
 
         .picture {
           margin-left: $column + $gutter;
@@ -544,7 +544,7 @@ Zoomed in above 600 px
 
       &.browser {
         margin: 3em 0;
-        height: 34em;
+        height: 36em;
         .top, .bottom { width: 545px; }
         .top { height: 39px; }
         .bottom { height: 21px; }
@@ -572,7 +572,7 @@ Zoomed in above 600 px
 
       &.android {
         margin: 4em 0;
-        height: 32em;
+        height: 34em;
         .top, .bottom { width: 300px; }
         .top { height: 65px; }
         .bottom { height: 116px; }
@@ -712,7 +712,7 @@ Zoomed in above 912 px
 
       &.browser {
         margin: 7.5em 0;
-        height: 22em;
+        height: 24em;
         .top, .bottom { width: 550px; }
         .left, .right, .screenshot { height: 292px; }
         .screenshot img {
@@ -734,7 +734,7 @@ Zoomed in above 912 px
 
       &.android {
         margin: 2em 0;
-        height: 33em;
+        height: 35em;
 
         .picture {
           margin-left: $cols3;
@@ -750,7 +750,7 @@ Zoomed in above 912 px
 
     .flexslider {
       .flex-control-nav {
-        width: $cols14;
+        width: 48em;
         margin-left: $column + $gutter;
       }
 
@@ -760,7 +760,7 @@ Zoomed in above 912 px
         }
 
         li a.next {
-          right: $column + $gutter;
+          right: ($column + $gutter) / $em;
         }
       }
     }
