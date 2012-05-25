@@ -21,6 +21,11 @@ body {
     text-transform: lowercase;
   }
 
+  h2 {
+    font-weight: normal;
+    color: #464646;
+  }
+
   .name-and-title {
     width: auto;
     display: table;
@@ -162,6 +167,10 @@ body {
   }
 
   .portfolio {
+    h1 {
+      display: none;
+    }
+
     .example {
       @include clearfix;
 

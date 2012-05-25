@@ -206,6 +206,11 @@ Zoomed out below 320 px
     margin-top: 1em;
   }
 
+  h2 {
+    font-size: 20px / $em;
+    margin-top: 1em;
+  }
+
   p, blockquote {
     font-size: 13px / $em;
     line-height: 22px / $em;
@@ -429,7 +434,7 @@ Zoomed in above 480 px
           float: right;
           @include width(3);
 
-          h1 {
+          h2 {
             margin-top: 0;
           }
         }
@@ -480,6 +485,10 @@ Zoomed in above 600 px
 
   h1 {
     font-size: 42px / $em;
+  }
+
+  h2 {
+    font-size: 36px / $em;
   }
 
   p, blockquote {
@@ -564,7 +573,7 @@ Zoomed in above 600 px
           float: none;
           @include width(8);
 
-          h1 {
+          h2 {
             margin-top: 1em;
           }
         }
@@ -729,6 +738,10 @@ Zoomed in above 912 px
           float: right;
           @include width(4);
           margin-right: $column + $gutter;
+
+          h2 {
+            font-size: 30px / $em;
+          }
         }
       }
 
