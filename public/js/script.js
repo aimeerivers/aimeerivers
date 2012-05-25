@@ -12,7 +12,7 @@ $.ready = function() {
   });
 
   $('.flexslider').flexslider({
-    slideshowSpeed: 6000,
+    slideshowSpeed: 10000,
     pauseOnHover: true
   });
 
