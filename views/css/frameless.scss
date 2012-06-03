@@ -361,7 +361,7 @@ Zoomed out below 320 px
     padding-bottom: 1em;
 
     blockquote:before, blockquote:after {
-      font-size: 45px / $em;
+      font-size: 36px;
     }
 
     .attribution {
@@ -627,7 +627,7 @@ Zoomed in above 600 px
     @include width(5);
 
     blockquote:before, blockquote:after {
-      font-size: 60px / $em;
+      font-size: 51px;
     }
 
     .attribution {
@@ -793,7 +793,7 @@ Zoomed in above 912 px
     margin-right: $column + $gutter;
 
     blockquote:before, blockquote:after {
-      font-size: 65px / $em;
+      font-size: 56px;
     }
 
     .attribution {
