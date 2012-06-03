@@ -15,7 +15,7 @@ TESTIMONIALS = [
     date: "January 2012"
   },
   {
-    text: "We hired Aimee at a key stage of our site redevelopment and her attitude and enthusiasm was key in getting our site relaunch live. Her love of web development shines through and she's always ready to go that extra mile to complete tasks on time and on budget. Aimee has worked fantastically well with members of our team and I would not hesitate to recommend her work to anyone",
+    text: "We hired Aimee at a key stage of our site redevelopment and her attitude and enthusiasm was key in getting our site relaunch live. Her love of web development shines through and she's always ready to go that extra mile to complete tasks on time and on budget. Aimee has worked fantastically well with members of our team and I would not hesitate to recommend her work to anyone.",
     name: "Neil McDermott",
     date: "November 2011"
   },
