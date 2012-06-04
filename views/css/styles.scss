@@ -308,6 +308,10 @@ body {
 }
 
 .ie8 {
+  .flexslider .slides img {
+    max-width: none;
+  }
+
   .testimonials {
     blockquote:before, blockquote:after {
       content: "";
