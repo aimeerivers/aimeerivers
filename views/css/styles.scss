@@ -58,7 +58,7 @@ body {
     list-style-type: none;
 
     li {
-      display: inline-block;
+      display: inline;
 
       &:first-child {
         margin-left: 0;
@@ -305,6 +305,12 @@ body {
     }
   }
 
+}
+
+.ie6 {
+  ul.contact-icons {
+    position: relative;
+  }
 }
 
 .ie8 {
