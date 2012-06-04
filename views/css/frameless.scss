@@ -299,7 +299,7 @@ Zoomed out below 320 px
         height: 23em;
         .top, .bottom { width: 312px; }
         .top { height: 22px; }
-        .bottom { height: 11px; }
+        .bottom { height: 12px; }
         .left, .right, .screenshot { height: 167px; }
         .left { width: 25px; }
         .right { width: 9px; }
@@ -307,6 +307,11 @@ Zoomed out below 320 px
           width: 272px;
           height: 167px;
         }
+
+        .top { background-image: url(/images/browser-frame/mobile/top.jpg); }
+        .bottom { background-image: url(/images/browser-frame/mobile/bottom.jpg); }
+        .left { background-image: url(/images/browser-frame/mobile/left.jpg); }
+        .right { background-image: url(/images/browser-frame/mobile/right.jpg); }
 
         .details {
           @include width(5);
@@ -327,6 +332,11 @@ Zoomed out below 320 px
           width: 100px;
           height: 167px;
         }
+
+        .top { background-image: url(/images/android-frame/mobile/top.jpg); }
+        .bottom { background-image: url(/images/android-frame/mobile/bottom.jpg); }
+        .left { background-image: url(/images/android-frame/mobile/left.jpg); }
+        .right { background-image: url(/images/android-frame/mobile/right.jpg); }
 
         .picture {
           float: left;
@@ -426,7 +436,7 @@ Zoomed in above 480 px
         height: 14em;
         .top, .bottom { width: 282px; }
         .top { height: 19px; }
-        .bottom { height: 10px; }
+        .bottom { height: 11px; }
         .left, .right, .screenshot { height: 149px; }
         .left { width: 23px; }
         .right { width: 9px; }
@@ -434,6 +444,11 @@ Zoomed in above 480 px
           width: 245px;
           height: 149px;
         }
+
+        .top { background-image: url(/images/browser-frame/mobile-wide/top.jpg); }
+        .bottom { background-image: url(/images/browser-frame/mobile-wide/bottom.jpg); }
+        .left { background-image: url(/images/browser-frame/mobile-wide/left.jpg); }
+        .right { background-image: url(/images/browser-frame/mobile-wide/right.jpg); }
 
         .details {
           float: right;
@@ -575,6 +590,11 @@ Zoomed in above 600 px
           height: 289px;
         }
 
+        .top { background-image: url(/images/browser-frame/tablet/top.jpg); }
+        .bottom { background-image: url(/images/browser-frame/tablet/bottom.jpg); }
+        .left { background-image: url(/images/browser-frame/tablet/left.jpg); }
+        .right { background-image: url(/images/browser-frame/tablet/right.jpg); }
+
         .picture {
           float: none;
         }
@@ -602,6 +622,11 @@ Zoomed in above 600 px
           width: 200px;
           height: 334px;
         }
+
+        .top { background-image: url(/images/android-frame/tablet/top.jpg); }
+        .bottom { background-image: url(/images/android-frame/tablet/bottom.jpg); }
+        .left { background-image: url(/images/android-frame/tablet/left.jpg); }
+        .right { background-image: url(/images/android-frame/tablet/right.jpg); }
 
         .picture {
           margin-left: 0;
@@ -743,6 +768,11 @@ Zoomed in above 912 px
           width: 478px;
           height: 292px;
         }
+
+        .top { background-image: url(/images/browser-frame/desktop/top.jpg); }
+        .bottom { background-image: url(/images/browser-frame/desktop/bottom.jpg); }
+        .left { background-image: url(/images/browser-frame/desktop/left.jpg); }
+        .right { background-image: url(/images/browser-frame/desktop/right.jpg); }
 
         .picture {
           float: left;

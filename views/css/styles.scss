@@ -176,7 +176,6 @@ body {
 
       .top, .bottom, .left, .right {
         background-repeat: no-repeat;
-        background-size: 100% 100%;
       }
 
       .left, .right, .screenshot {
@@ -189,42 +188,6 @@ body {
 
       .screenshot {
         display: inline-block;
-      }
-
-      &.browser {
-        .top {
-          background-image: url(/images/browser-frame/top.png);
-        }
-
-        .bottom {
-          background-image: url(/images/browser-frame/bottom.png);
-        }
-
-        .left {
-          background-image: url(/images/browser-frame/left.png);
-        }
-
-        .right {
-          background-image: url(/images/browser-frame/right.png);
-        }
-      }
-
-      &.android {
-        .top {
-          background-image: url(/images/android-frame/top.png);
-        }
-
-        .bottom {
-          background-image: url(/images/android-frame/bottom.png);
-        }
-
-        .left {
-          background-image: url(/images/android-frame/left.png);
-        }
-
-        .right {
-          background-image: url(/images/android-frame/right.png);
-        }
       }
 
     }
