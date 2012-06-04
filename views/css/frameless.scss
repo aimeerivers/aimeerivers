@@ -370,6 +370,11 @@ Zoomed out below 320 px
     }
   }
 
+  .ie7 {
+    .portfolio .example.browser { height: 25.5em; }
+    .portfolio .example.android { height: 23em; }
+  }
+
 }
 
 
@@ -471,6 +476,11 @@ Zoomed in above 480 px
   .testimonials {
     @include width(4);
     float: right;
+  }
+
+  .ie7 {
+    .portfolio .example.browser { height: 18em; }
+    .portfolio .example.android { height: 20em; }
   }
 
 }
@@ -633,6 +643,11 @@ Zoomed in above 600 px
     .attribution {
       font-size: 15px / $em;
     }
+  }
+
+  .ie7 {
+    .portfolio .example.browser { height: 39em; }
+    .portfolio .example.android { height: 38em; }
   }
 
 }
@@ -799,6 +814,11 @@ Zoomed in above 912 px
     .attribution {
       font-size: 16px / $em;
     }
+  }
+
+  .ie7 {
+    .portfolio .example.browser { height: 31.5em; }
+    .portfolio .example.android { height: 37em; }
   }
 
 }
