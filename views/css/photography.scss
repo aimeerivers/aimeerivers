@@ -1,0 +1,42 @@
+@import 'mixins.scss';
+
+body {
+  background-color: #181818;
+  text-align: center;
+
+  h1, h2, a {
+    color: #bbb;
+  }
+
+  p {
+    font-family: 'Lustria', serif;
+    color: #666;
+    font-size: 0.9em;
+  }
+
+  .flexslider {
+    background-color: transparent;
+
+    .flex-control-nav, .flex-direction-nav {
+      display: none;
+    }
+  }
+}
+
+header {
+  background-color: #111;
+  padding: 0.2em;
+  @include box_shadow(0px, 0px, 9px, 9px, #131313);
+}
+
+.slides {
+  .example {
+    img {
+      max-width: 70%;
+      max-height: 65%;
+      display: inline;
+      border: 1px solid #111;
+      @include box_shadow(2px, 2px, 9px, 3px, #131313);
+    }
+  }
+}

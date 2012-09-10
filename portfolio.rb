@@ -3,6 +3,8 @@ require 'sinatra'
 require 'haml'
 require 'sass'
 
+Dir["lib/**/*.rb"].each {|f| require "./#{f}"}
+
 TESTIMONIALS = [
   {
     text: "aimee has an infectious passion for her craft. Having spent many hours pairing with aimee across multiple projects, I have always enjoyed the experience, learned a lot and been able to easily contribute in a collaborative manner. I would recommend aimee as an excellent team member, developer and friend.",
@@ -102,6 +104,11 @@ end
 
 get '/starbursts' do
   haml :starbursts
+end
+
+get '/photography' do
+  @portfolio = PhotoPortfolio.new
+  haml :photography
 end
 
 get '/css/:name.css' do
