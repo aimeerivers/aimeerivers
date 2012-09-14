@@ -18,4 +18,12 @@ class Photo
     @data.find_first('atom:link[@rel="alternate"]', NAMESPACE)['href']
   end
 
+  def to_hash
+    {
+      title: title,
+      image: image,
+      link: link
+    }
+  end
+
 end

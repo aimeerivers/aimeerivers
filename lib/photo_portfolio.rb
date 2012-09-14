@@ -12,7 +12,7 @@ class PhotoPortfolio
   def photos
     @doc.find('//atom:feed/atom:entry', 'atom:http://www.w3.org/2005/Atom').map do |xml_object|
       Photo.new(xml_object)
-    end
+    end.map(&:to_hash)
   end
 
 end

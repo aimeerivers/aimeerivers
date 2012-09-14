@@ -7,3 +7,4 @@ gem 'thin', '1.3.1'
 gem 'foreman', '0.41.0'
 
 gem 'libxml-ruby', '2.3.3'
+gem 'dalli', '2.2.1'

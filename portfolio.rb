@@ -2,6 +2,11 @@ require 'rubygems'
 require 'sinatra'
 require 'haml'
 require 'sass'
+require 'dalli'
+
+set :cache, Dalli::Client.new
+set :cache_server, "localhost:11211"
+set :enable_cache, true
 
 Dir["lib/**/*.rb"].each {|f| require "./#{f}"}
 
@@ -107,11 +112,17 @@ get '/starbursts' do
 end
 
 get '/photography' do
-  @portfolio = PhotoPortfolio.new
+  @photos = get_photos
   haml :photography
 end
 
 get '/css/:name.css' do
   content_type 'text/css', charset: 'utf-8'
   scss :"css/#{params[:name]}"
+end
+
+def get_photos
+  return PhotoPortfolio.new.photos unless settings.enable_cache
+  settings.cache.set('photos', PhotoPortfolio.new.photos) if settings.cache.get('photos').nil?
+  settings.cache.get('photos')
 end
