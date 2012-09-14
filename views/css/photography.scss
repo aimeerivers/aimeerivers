@@ -8,6 +8,11 @@ body {
     color: #bbb;
   }
 
+  h2 {
+    padding-right: 2em;
+    padding-left: 2em;
+  }
+
   p {
     font-family: 'Lustria', serif;
     color: #666;
@@ -18,8 +23,25 @@ body {
     background-color: transparent;
     border: 0;
 
-    .flex-control-nav, .flex-direction-nav {
+    .flex-control-nav {
       display: none;
+    }
+
+    .flex-direction-nav {
+      li a {
+        background-image: url(/images/flexslider/photography_bg_direction_nav.png);
+        width: 37px;
+        top: 2em;
+
+        &.prev {
+          left: 2%;
+        }
+
+        &.next {
+          background-position: -32px 0;
+          right: 2%;
+        }
+      }
     }
   }
 }
