@@ -4,7 +4,7 @@ require 'haml'
 require 'sass'
 require 'dalli'
 
-set :cache, Dalli::Client.new
+set :cache, Dalli::Client.new(ENV['MEMCACHE_SERVERS'], expires_in: 3600)
 set :enable_cache, true
 
 Dir["lib/**/*.rb"].each {|f| require "./#{f}"}
