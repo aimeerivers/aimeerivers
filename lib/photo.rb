@@ -28,6 +28,10 @@ class Photo
     width * height
   end
 
+  def aspect_ratio
+    height.to_f / width.to_f
+  end
+
   def to_hash
     {
       title: title,
@@ -35,7 +39,8 @@ class Photo
       link: link,
       width: width,
       height: height,
-      pixel_area: pixel_area
+      pixel_area: pixel_area,
+      aspect_ratio: aspect_ratio
     }
   end
 
