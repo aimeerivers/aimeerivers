@@ -24,13 +24,18 @@ class Photo
     return @data.find_first('media:content')['height'].to_i
   end
 
+  def pixel_area
+    width * height
+  end
+
   def to_hash
     {
       title: title,
       image: image,
       link: link,
       width: width,
-      height: height
+      height: height,
+      pixel_area: pixel_area
     }
   end
 
