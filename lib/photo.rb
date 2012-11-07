@@ -17,11 +17,11 @@ class Photo
   end
 
   def width
-    @data.find_first('media:content')['width'].to_i
+    @width ||= @data.find_first('media:content')['width'].to_i
   end
 
   def height
-    @data.find_first('media:content')['height'].to_i
+    @height ||= @data.find_first('media:content')['height'].to_i
   end
 
   def pixel_area
