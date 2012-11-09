@@ -117,6 +117,10 @@ get '/photography' do
   haml :photography
 end
 
+get '/test' do
+  haml :test
+end
+
 get '/css/:name.css' do
   content_type 'text/css', charset: 'utf-8'
   scss :"css/#{params[:name]}"

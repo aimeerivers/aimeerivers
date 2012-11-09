@@ -19,6 +19,47 @@ body {
     font-size: 0.9em;
   }
 
+  .portfolio {
+    @include clearfix;
+    margin: 0 auto;
+
+    .container {
+      width: 280px;
+      float: left;
+    }
+    .wide, .square, .tall, .big, .extrabig {
+      background-color: gray;
+      margin: 5px;
+      float: left;
+      @include border_radius(3px);
+    }
+
+    .wide {
+      width: 270px;
+      height: 100px;
+    }
+
+    .square {
+      width: 130px;
+      height: 100px;
+    }
+
+    .tall {
+      width: 130px;
+      height: 210px;
+    }
+
+    .big {
+      width: 270px;
+      height: 210px;
+    }
+
+    .extrabig {
+      width: 270px;
+      height: 320px;
+    }
+  }
+
   .flexslider {
     background-color: transparent;
     border: 0;
