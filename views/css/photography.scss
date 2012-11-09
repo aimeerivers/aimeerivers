@@ -21,43 +21,44 @@ body {
 
   .portfolio {
     @include clearfix;
-    max-width: 840px;
+    max-width: 62.4em;
     margin: 0 auto;
 
-    .container {
-      width: 280px;
+    .card {
+      width: 20.8em;
       float: left;
     }
-    .wide, .square, .tall, .big, .extrabig {
+
+    .wide, .small, .tall, .big, .extrabig {
       background-color: gray;
-      margin: 5px;
+      margin: 0.2em;
       float: left;
-      @include border_radius(3px);
+      @include border_radius(0.2em);
     }
 
     .wide {
-      width: 270px;
-      height: 100px;
+      width: 20.4em;
+      height: 9em;
     }
 
-    .square {
-      width: 130px;
-      height: 100px;
+    .small {
+      width: 10em;
+      height: 9em;
     }
 
     .tall {
-      width: 130px;
-      height: 210px;
+      width: 10em;
+      height: 18.4em;
     }
 
     .big {
-      width: 270px;
-      height: 210px;
+      width: 20.4em;
+      height: 18.4em;
     }
 
     .extrabig {
-      width: 270px;
-      height: 320px;
+      width: 20.4em;
+      height: 27.8em;
     }
   }
 
