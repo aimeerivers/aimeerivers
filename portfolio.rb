@@ -127,7 +127,7 @@ get '/css/:name.css' do
   scss :"css/#{params[:name]}"
 end
 
-def get_photos(feed)
+def get_photos(feed = '')
   PhotoPortfolio.new(feed).photos
 end
 
@@ -140,7 +140,8 @@ def get_arranged_photos(feed)
     [:big, :small, :small],
     [:wide, :big]
   ]
-  return PhotoPortfolio.arrange(get_photos(feed), arrangement) unless settings.enable_cache
-  settings.cache.set('arranged_photos', PhotoPortfolio.arrange(get_photos(feed), arrangement)) if settings.cache.get('arranged_photos').nil?
+  return PhotoPortfolio.arrange(get_photos(feed), arrangement) if feed
+  return PhotoPortfolio.arrange(get_photos, arrangement) unless settings.enable_cache
+  settings.cache.set('arranged_photos', PhotoPortfolio.arrange(get_photos, arrangement)) if settings.cache.get('arranged_photos').nil?
   settings.cache.get('arranged_photos')
 end
