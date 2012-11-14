@@ -117,6 +117,11 @@ get '/photography' do
   haml :photography
 end
 
+get '/cache/clear' do
+  settings.cache.set('arranged_photos', nil)
+  "cache cleared"
+end
+
 get '/css/:name.css' do
   content_type 'text/css', charset: 'utf-8'
   scss :"css/#{params[:name]}"
