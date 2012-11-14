@@ -36,7 +36,8 @@
       - @photos.each do |card|
         .card
           - card.each do |photo|
-            %div(class="#{photo[:size]}" style="background-image: url(#{photo[:image]}); background-size: #{photo[:stretch_style][photo[:size]]};")
+            %a(href="#{photo[:link]}" title="#{photo[:title]}")
+              %div(class="#{photo[:size]}" style="background-image: url(#{photo[:image]}); background-size: #{photo[:stretch_style][photo[:size]]};")
 
     .clear(style="clear:left;")
 
