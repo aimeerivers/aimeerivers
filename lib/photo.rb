@@ -33,13 +33,10 @@ class Photo
   end
 
   def percentages
-    {
-      :wide => magic_percentage(0.441),
-      :big => magic_percentage(0.902),
-      :small => magic_percentage(0.9),
-      :tall => magic_percentage(1.84),
-      :extrabig => magic_percentage(1.363)
-    }
+    PhotoPortfolio::RATIOS.keys.reduce({}) do |values, size|
+      values[size] = magic_percentage(PhotoPortfolio::RATIOS[size])
+      values
+    end
   end
 
   def to_hash
