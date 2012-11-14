@@ -130,9 +130,7 @@ get '/css/:name.css' do
 end
 
 def get_photos
-  return PhotoPortfolio.new.photos unless settings.enable_cache
-  settings.cache.set('photos', PhotoPortfolio.new.photos) if settings.cache.get('photos').nil?
-  settings.cache.get('photos')
+  PhotoPortfolio.new.photos
 end
 
 def get_arranged_photos
