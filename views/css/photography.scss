@@ -30,7 +30,10 @@ body {
     }
 
     .wide, .small, .tall, .big, .extrabig {
-      background-color: gray;
+      background: {
+        position: 50% 50%;
+        repeat: no-repeat;
+      }
       margin: 0.2em;
       float: left;
       @include border_radius(0.2em);

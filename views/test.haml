@@ -31,32 +31,75 @@
       Looking for my main portfolio? Here is my
       %a(href="/") web development work.
 
+  -@photos = @unsorted_photos.sort_by{|p| p[:height]}
+  -by_aspect_ratio = @unsorted_photos.sort_by{|p| (1.363 - p[:aspect_ratio]).abs}
+  -@photos[3] = @unsorted_photos.delete(by_aspect_ratio[0])
+  -by_aspect_ratio = @unsorted_photos.sort_by{|p| (1.84 - p[:aspect_ratio]).abs}
+  -@photos[7] = @unsorted_photos.delete(by_aspect_ratio[0])
+  -by_aspect_ratio = @unsorted_photos.sort_by{|p| (0.441 - p[:aspect_ratio]).abs}
+  -@photos[10] = @unsorted_photos.delete(by_aspect_ratio[0])
+  -@photos[14] = @unsorted_photos.delete(by_aspect_ratio[1])
+  -by_aspect_ratio = @unsorted_photos.sort_by{|p| (0.902 - p[:aspect_ratio]).abs}
+  -@photos[0] = @unsorted_photos.delete(by_aspect_ratio[0])
+  -@photos[6] = @unsorted_photos.delete(by_aspect_ratio[1])
+  -@photos[11] = @unsorted_photos.delete(by_aspect_ratio[2])
+  -@photos[16] = @unsorted_photos.delete(by_aspect_ratio[3])
+  -by_aspect_ratio = @unsorted_photos.sort_by{|p| (0.9 - p[:aspect_ratio]).abs}
+  -@photos[1] = @unsorted_photos.delete(by_aspect_ratio[0])
+  -@photos[2] = @unsorted_photos.delete(by_aspect_ratio[1])
+  -@photos[4] = @unsorted_photos.delete(by_aspect_ratio[2])
+  -@photos[5] = @unsorted_photos.delete(by_aspect_ratio[3])
+  -@photos[8] = @unsorted_photos.delete(by_aspect_ratio[4])
+  -@photos[9] = @unsorted_photos.delete(by_aspect_ratio[5])
+  -@photos[15] = @unsorted_photos.delete(by_aspect_ratio[6])
+  -@photos[12] = @unsorted_photos.delete(by_aspect_ratio[7])
+  -@photos[13] = @unsorted_photos.delete(by_aspect_ratio[8])
+
   #content
     .portfolio
       .card
-        .big
-        .small
-        .small
-      .card
-        .extrabig
-      .card
-        .small
-        .small
-        .big
+        - photo = @photos[0]
+        .big(style="background-image: url(#{photo[:image]}); background-size: #{photo[:percentages][:big]};")
+        - photo = @photos[1]
+        .small(style="background-image: url(#{photo[:image]}); background-size: #{photo[:percentages][:small]};")
+        - photo = @photos[2]
+        .small(style="background-image: url(#{photo[:image]}); background-size: #{photo[:percentages][:small]};")
 
       .card
-        .tall
-        .small
-        .small
-        .wide
+        - photo = @photos[3]
+        .extrabig(style="background-image: url(#{photo[:image]}); background-size: #{photo[:percentages][:extrabig]};")
+
       .card
-        .big
-        .small
-        .small
+        - photo = @photos[4]
+        .small(style="background-image: url(#{photo[:image]}); background-size: #{photo[:percentages][:small]};")
+        - photo = @photos[5]
+        .small(style="background-image: url(#{photo[:image]}); background-size: #{photo[:percentages][:small]};")
+        - photo = @photos[6]
+        .big(style="background-image: url(#{photo[:image]}); background-size: #{photo[:percentages][:big]};")
+
       .card
-        .small
-        .small
-        .big
+        - photo = @photos[7]
+        .tall(style="background-image: url(#{photo[:image]}); background-size: #{photo[:percentages][:tall]};")
+        - photo = @photos[8]
+        .small(style="background-image: url(#{photo[:image]}); background-size: #{photo[:percentages][:small]};")
+        - photo = @photos[9]
+        .small(style="background-image: url(#{photo[:image]}); background-size: #{photo[:percentages][:small]};")
+        - photo = @photos[10]
+        .wide(class="#{photo[:css_class]}" style="background-image: url(#{photo[:image]}); background-size: #{photo[:percentages][:wide]};")
+
+      .card
+        - photo = @photos[11]
+        .big(style="background-image: url(#{photo[:image]}); background-size: #{photo[:percentages][:big]};")
+        - photo = @photos[12]
+        .small(style="background-image: url(#{photo[:image]}); background-size: #{photo[:percentages][:small]};")
+        - photo = @photos[13]
+        .small(style="background-image: url(#{photo[:image]}); background-size: #{photo[:percentages][:small]};")
+
+      .card
+        - photo = @photos[14]
+        .wide(style="background-image: url(#{photo[:image]}); background-size: #{photo[:percentages][:wide]};")
+        - photo = @photos[15]
+        .big(style="background-image: url(#{photo[:image]}); background-size: #{photo[:percentages][:big]};")
 
     .clear(style="clear:left;")
 

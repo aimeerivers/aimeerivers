@@ -29,7 +29,17 @@ class Photo
   end
 
   def aspect_ratio
-    height.to_f / width.to_f
+    @aspect_ratio ||= height.to_f / width.to_f
+  end
+
+  def percentages
+    {
+      :wide => magic_percentage(0.441),
+      :big => magic_percentage(0.902),
+      :small => magic_percentage(0.9),
+      :tall => magic_percentage(1.84),
+      :extrabig => magic_percentage(1.363)
+    }
   end
 
   def to_hash
@@ -40,8 +50,17 @@ class Photo
       width: width,
       height: height,
       pixel_area: pixel_area,
-      aspect_ratio: aspect_ratio
+      aspect_ratio: aspect_ratio,
+      percentages: percentages
     }
+  end
+
+  private
+
+  def magic_percentage(ratio)
+    answer = 103
+    return "auto #{answer}%" if aspect_ratio < ratio
+    "#{answer}% auto"
   end
 
 end

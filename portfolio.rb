@@ -118,6 +118,9 @@ get '/photography' do
 end
 
 get '/test' do
+  cache_control :public, max_age: 30
+  expires 30, :public
+  @unsorted_photos = get_photos
   haml :test
 end
 
