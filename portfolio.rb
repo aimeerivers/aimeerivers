@@ -120,7 +120,17 @@ end
 get '/test' do
   cache_control :public, max_age: 30
   expires 30, :public
-  @unsorted_photos = get_photos
+
+  arrangement = [
+    [:big, :small, :small],
+    [:extrabig],
+    [:small, :small, :big],
+    [:tall, :small, :small, :wide],
+    [:big, :small, :small],
+    [:wide, :big]
+  ]
+
+  @photos = PhotoPortfolio.arrange(get_photos, arrangement)
   haml :test
 end
 
