@@ -32,13 +32,14 @@
       %a(href="/") web development work.
 
   #content
-    .portfolio.flexslider
-      %ul.slides
-        - @photos.each do |photo|
-          %li.example
-            %h2= photo[:title]
-            %a(href="#{photo[:link]}")
-              %img(src="#{photo[:image]}" alt="#{photo[:title]}")
+    .portfolio
+      - @photos.each do |card|
+        .card
+          - card.each do |photo|
+            %div(class="#{photo[:size]}" style="background-image: url(#{photo[:image]}); background-size: #{photo[:percentages][photo[:size]]};")
+
+    .clear(style="clear:left;")
+
 
   %script(src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js")
   :javascript

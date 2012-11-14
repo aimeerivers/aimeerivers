@@ -113,15 +113,8 @@ end
 get '/photography' do
   cache_control :public, max_age: 30
   expires 30, :public
-  @photos = get_photos
-  haml :photography
-end
-
-get '/test' do
-  cache_control :public, max_age: 30
-  expires 30, :public
   @photos = get_arranged_photos
-  haml :test
+  haml :photography
 end
 
 get '/css/:name.css' do
