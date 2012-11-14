@@ -11,8 +11,9 @@ class PhotoPortfolio
       extrabig: 1.363
   }
 
-  def initialize
-    content = open('http://api.flickr.com/services/feeds/photoset.gne?set=72157630026922131&nsid=89953410@N00&lang=en-us&format=rss_200').read
+  def initialize(feed = '')
+    feed = 'http://api.flickr.com/services/feeds/photoset.gne?set=72157630026922131&nsid=89953410@N00&lang=en-us&format=rss_200' if feed == ''
+    content = open(feed).read
     parser = LibXML::XML::Parser.string(content)
     @doc = parser.parse
   end
