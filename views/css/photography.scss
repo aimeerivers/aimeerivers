@@ -22,7 +22,7 @@ body {
   .portfolio {
     @include clearfix;
     max-width: 62.4em;
-    margin: 0 auto;
+    margin: 0 auto 5em auto;
 
     .card {
       width: 20.8em;
