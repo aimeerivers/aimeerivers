@@ -120,17 +120,7 @@ end
 get '/test' do
   cache_control :public, max_age: 30
   expires 30, :public
-
-  arrangement = [
-    [:big, :small, :small],
-    [:extrabig],
-    [:small, :small, :big],
-    [:tall, :small, :small, :wide],
-    [:big, :small, :small],
-    [:wide, :big]
-  ]
-
-  @photos = PhotoPortfolio.arrange(get_photos, arrangement)
+  @photos = get_arranged_photos
   haml :test
 end
 
@@ -143,4 +133,18 @@ def get_photos
   return PhotoPortfolio.new.photos unless settings.enable_cache
   settings.cache.set('photos', PhotoPortfolio.new.photos) if settings.cache.get('photos').nil?
   settings.cache.get('photos')
+end
+
+def get_arranged_photos
+  arrangement = [
+    [:big, :small, :small],
+    [:extrabig],
+    [:small, :small, :big],
+    [:tall, :small, :small, :wide],
+    [:big, :small, :small],
+    [:wide, :big]
+  ]
+  return PhotoPortfolio.arrange(get_photos, arrangement) unless settings.enable_cache
+  settings.cache.set('arranged_photos', PhotoPortfolio.arrange(get_photos, arrangement)) if settings.cache.get('arranged_photos').nil?
+  settings.cache.get('arranged_photos')
 end
