@@ -36,7 +36,7 @@
       - @photos.each do |card|
         .card
           - card.each do |photo|
-            %div(class="#{photo[:size]}" style="background-image: url(#{photo[:image]}); background-size: #{photo[:percentages][photo[:size]]};")
+            %div(class="#{photo[:size]}" style="background-image: url(#{photo[:image]}); background-size: #{photo[:stretch_style][photo[:size]]};")
 
     .clear(style="clear:left;")
 

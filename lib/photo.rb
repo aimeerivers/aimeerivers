@@ -32,9 +32,9 @@ class Photo
     @aspect_ratio ||= height.to_f / width.to_f
   end
 
-  def percentages
+  def stretch_style
     PhotoPortfolio::RATIOS.keys.reduce({}) do |values, size|
-      values[size] = magic_percentage(PhotoPortfolio::RATIOS[size])
+      values[size] = calculate_stretch_style(PhotoPortfolio::RATIOS[size])
       values
     end
   end
@@ -48,16 +48,15 @@ class Photo
       height: height,
       pixel_area: pixel_area,
       aspect_ratio: aspect_ratio,
-      percentages: percentages
+      stretch_style: stretch_style
     }
   end
 
   private
 
-  def magic_percentage(ratio)
-    answer = 103
-    return "auto #{answer}%" if aspect_ratio < ratio
-    "#{answer}% auto"
+  def calculate_stretch_style(ratio)
+    return "auto 103%" if aspect_ratio < ratio
+    "103% auto"
   end
 
 end
