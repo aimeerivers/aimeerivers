@@ -21,7 +21,7 @@ body {
 
   .portfolio {
     @include clearfix;
-    max-width: 62.4em;
+    max-width: 20.8em;
     margin: 0 auto 5em auto;
 
     .card {
@@ -102,5 +102,17 @@ header {
       border: 1px solid #111;
       @include box_shadow(2px, 2px, 9px, 3px, #131313);
     }
+  }
+}
+
+@media screen and (min-width: 45em) {
+  #content .portfolio {
+    max-width: 41.6em;
+  }
+}
+
+@media screen and (min-width: 65em) {
+  #content .portfolio {
+    max-width: 62.4em;
   }
 }
