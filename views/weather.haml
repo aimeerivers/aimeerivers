@@ -8,3 +8,6 @@
   %h1= @weather.city
   %p.description= @weather.description
   %img(src="/images/weather/#{@weather.short_description}.png" alt="#{@weather.short_description}")
+  %p.temperature
+    = @weather.temperature.round(1)
+    &deg;C
