@@ -1,5 +1,4 @@
 *.DS_Store
-.rvmrc
 .sass-cache/
 *.gem
 *.rbc
