@@ -3,6 +3,8 @@ require 'sinatra'
 require 'haml'
 require 'sass'
 require 'dalli'
+require 'httparty'
+require 'json'
 
 set :cache, Dalli::Client.new(ENV['MEMCACHE_SERVERS'], expires_in: 3600)
 set :enable_cache, true
@@ -115,6 +117,12 @@ get '/photography' do
   expires 30, :public
   @photos = get_arranged_photos(params[:feed])
   haml :photography
+end
+
+get '/weather/:city' do
+  response = HTTParty.get("http://api.openweathermap.org/data/2.5/weather", query: {q: params[:city]})
+  @weather = Weather.new(JSON.parse(response.body))
+  haml :weather, format: :html5
 end
 
 get '/cache/clear' do
